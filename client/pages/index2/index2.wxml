@@ -1,0 +1,10 @@
+<view class="container">
+    <view>统计信息：</view>
+    <canvas canvas-id="lineCanvas" disable-scroll="true" class="canvas" bindtouchstart="touchHandler" bindtouchmove="moveHandler" bindtouchend="touchEndHandler"></canvas>
+    <view style="text-align:center">拖动图表查看\n</view>
+      <canvas canvas-id="lineCanvas2" disable-scroll="true" class="canvas" bindtouchstart="touchHandler2" bindtouchmove="moveHandler2" bindtouchend="touchEndHandler2"></canvas>
+    <view style="text-align:center">拖动图表查看</view>
+    <text bindtap='minusMonth'>上一个月</text>
+    <text>当前月份：{{ month }}</text>
+    <text bindtap='addMonth'>下一个月</text>
+</view>
